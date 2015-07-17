@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+      <!-- Features -->
+        <section id="into">
+          <header class="style1">
+            <h2>Learn about Bernie's views on the issues</h2>
+            <!-- <p>Feugiat dolor nullam orci pretium phasellus justo</p> -->
+          </header>
+          <div class="feature-list">
+            <ul class="icons labeled post-list">
+              {% for post in site.issues %}
+                <li><i class="fa fa-ticket fa-3x pull-left fa-border"></i>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" class="label">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+
+    <!-- One -->
+      <section id="about" class="main style2 right dark fullscreen">
+        <div class="content box style2">
+          <header>
+            <h2>About Bernie Sanders</h2>
+          </header>
+          <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+          Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+          id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+        </div>
+        <a href="#two" class="button style2 down anchored">Next</a>
+      </section>

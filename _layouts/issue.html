@@ -1,0 +1,58 @@
+---
+layout: default
+---
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="wrapper style1">
+					<section id="features" class="container special">
+						<header>
+							<h2>{{ page.title }} </h2>
+							<p>{{ page.summary }}</p>
+						</header>
+
+						<div class="row">
+							{% for sub_issue in page.sub_issues %}
+								<div class="6u 12u(narrower)">
+
+									<section class="box special">
+										<span class="image featured"><img src="images/pic02.jpg" alt=""></span>
+										<h3>{{ sub_issue }}</h3>
+										<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+										<ul class="actions">
+											<li><a href="/issues/{{ sub_issue }}" class="button alt">Learn More</a></li>
+										</ul>
+									</section>
+
+								</div>
+							{% endfor %}
+						</div>
+					</section>
+
+				</div>
+
+				</div>
+			</section>
+
+			<section id="work" class="main style3 primary">
+				<div class="wrapper style1">
+					<section id="features" class="container special">
+						<header>
+							<h3>Related Issues</h3>
+						</header>
+
+						<div class="row">
+							<div class="feature-list">
+					          	<ul class="icons labeled post-list">
+					              {% for rel_issue in page.related_issues_pg %}
+					                <li><i class="fa fa-ticket fa-3x pull-left fa-border"></i>
+					                  <a class="post-link" href="/issues/{{ rel_issue }}" class="label">{{ rel_issue }}</a></li>
+					              {% endfor %}
+					            </ul>
+				        	</div>
+						</div>
+					</section>
+
+				</div>
+
+				</div>
+			</section>
