@@ -4,13 +4,15 @@ This document describes things that are known to be broken, and how to add issue
 
 ## To Do
 
-	0. The issues are not appearing on the home page (works on @horserunning's local sever, must be a quick configuration issue.)**
+	0. Show issues on home page
 
-	1. Only show a subset of issues on main page**
+	The issues are not appearing on the home page (works on @horserunning's local sever, must be a quick configuration issue.
+
+	1. Only show a subset of issues on the main page.
 
 Each issue, either issue or subissue, corresponds to a single markdown file (e.g. education.markdown) in the "_issues" folder.
 
-The goal is that only a subset of the issues appear on the home page (high level ones like Women, Children, and Family). The ones linked on the home page direct users to sub-issues that also have the example.com/issue/sub-issue-name URL path. This is an unfinished task since all issues appear on the home page currently.
+The goal is that only a subset of the issues appear on the home page (high level ones like Women, Children, and Family). The ones linked on the home page direct users to sub-issues that also have the example.com/issue/sub-issue-name URL path. Currently the home page loops through all issues, including subissues.
 
 	2. Styling**
 
