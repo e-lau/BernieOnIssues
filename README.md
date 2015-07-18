@@ -4,29 +4,29 @@ This document describes things that are known to be broken, and how to add issue
 
 ## To Do
 
-	0. Show issues on home page
+**0. Show issues on home page**
 
-	The issues are not appearing on the home page (works on @horserunning's local sever, must be a quick configuration issue.
+The issues are not appearing on the home page (works on @horserunning's local sever, must be a quick configuration issue.
 
-	1. Only show a subset of issues on the main page.
+**1. Only show a subset of issues on the main page.**
 
 Each issue, either issue or subissue, corresponds to a single markdown file (e.g. education.markdown) in the "_issues" folder.
 
 The goal is that only a subset of the issues appear on the home page (high level ones like Women, Children, and Family). The ones linked on the home page direct users to sub-issues that also have the example.com/issue/sub-issue-name URL path. Currently the home page loops through all issues, including subissues.
 
-	2. Styling**
+**2. Styling**
 
 Make colors of the site match BernieSanders.com colors.
 
-	3. Display name of issue in Related Links
+**3. Display name of issue in Related Links**
 
 More elegant solution to display related issues. Right now, the issue page loops through a list in the issue page's front matter named "related_issues_pg" (e.g. [women, children]). It iterates through the names of the related markdown files and links to each one, and displays the link as its file name. We just want to display the name of the issue ("French Cuisine" instead of "french-cuisine")
 
-	4. Add social media accounts and add e-mail to formspree form
+**4. Add social media accounts and add e-mail to formspree form**
 
-	5. Add HTTPS
+**5. HTTPS**
 
-	6. Be able to easily add summaries of sub-issues in the front matter of the issue page (just filler text at the moment)
+**6. Be able to easily add summaries of sub-issues in the front matter of the issue page (just filler text at the moment)**
 
 
 ## Creating an ISSUE page
