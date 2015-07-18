@@ -11,8 +11,11 @@ layout: default
           <div class="feature-list">
             <ul class="icons labeled post-list">
               {% for post in site.issues %}
-                <li><i class="fa fa-ticket fa-3x pull-left fa-border"></i>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" class="label">{{ post.title }}</a></li>
+                <li>
+                  <i class="fa fa-ticket fa-3x pull-left fa-border"></i>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="label">{{ post.title }}</a>
+                </li>
+
               {% endfor %}
             </ul>
           </div>
